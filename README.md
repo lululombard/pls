@@ -12,7 +12,9 @@ This Golang project was made to serve a Pritunl license server in case you can't
 
 Assuming your pritunl install is in `/usr/lib/pritunl`, run this as root:
 ```bash
-wget -O /usr/bin/pls https://github.com/lululombard/pritunl_license_server/releases/download/1.0.1/pls_linux_amd64
+wget -O /usr/bin/pls https://github.com/lululombard/pritunl_license_server/releases/download/1.0.2/pls_linux_amd64
+
+chmod +x /usr/bin/pls
 
 cat >> /etc/systemd/system/pls.service <<EOF
 [Unit]
@@ -30,6 +32,7 @@ User=root
 WantedBy=multi-user.target
 EOF
 
+systemctl daemon-reload
 systemctl enable --now pls
 
 grep -rl https://app.pritunl.com /usr/lib/pritunl | xargs sudo sed -i 's/https:\/\/app.pritunl.com/http:\/\/localhost:5000/g'
