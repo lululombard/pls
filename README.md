@@ -1,14 +1,25 @@
-# Pritunl license server
+# Pritunl license server (aka "pls")
 
-## Setup
+This Golang project was made to serve a Pritunl license server in case you can't use the real ones.
 
-The Pritunl license server uses Flask and has been build and tested on Python 3.9
+## Requirements to run
 
-```bash
-python3.9 -m venv env
-env/bin/pip install -r requirements.txt
-```
+pls requires tmux to be installed and in the PATH to work.
 
-## Run locally
+## How to install
 
-To run the project locally, you can run `python app.py` to serve the subscription microservice.
+- Download the latest release of pls from the [GitHub releases](https://github.com/lululombard/pritunl_license_server/releases) as `pls`
+- Set it as runnable with `chmod +x pls`
+- Start pls with `./pls`
+
+## Development
+
+### Installation
+
+Run `go install`, it should install all the dependencies from `go.mod`.
+
+### Start the project
+
+pls requires tmux, golang 1.19 or later to develop for, and that's pretty much it!
+
+You can start the dev server by running `scripts/test.sh` and compile the project using `scripts/build.sh`.
