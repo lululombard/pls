@@ -9,7 +9,7 @@ import (
 
 func main() {
 	if os.Getenv("DUMP_VERSION_AND_EXIT") == "1" {
-		fmt.Println("1.0.2")
+		fmt.Println("1.0.3")
 		os.Exit(0)
 	}
 
@@ -25,7 +25,7 @@ func main() {
 			"trial_end": null,
 			"cancel_at_period_end": false,
 			"balance": 0,
-			"url_key": "",
+			"url_key": "czcqqyd4gwe3hq6wttbiwjwb3ni352qd",
 			"portal_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
 			"premium_buy_url": "",
 			"enterprise_buy_url": "",
