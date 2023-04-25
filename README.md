@@ -4,7 +4,7 @@ This Golang project was made to serve a Pritunl license server in case you can't
 
 ## How to install
 
-- Download the latest release of pls from the [GitHub releases](https://github.com/lululombard/pritunl_license_server/releases) as `pls`
+- Download the latest release of pls from the [GitHub releases](https://github.com/lululombard/pls/releases) as `pls`
 - Set it as runnable with `chmod +x pls`
 - Start pls with `./pls`
 
@@ -12,7 +12,7 @@ This Golang project was made to serve a Pritunl license server in case you can't
 
 Assuming your pritunl install is in `/usr/lib/pritunl`, run this as root:
 ```bash
-wget -O /usr/bin/pls https://github.com/lululombard/pritunl_license_server/releases/download/1.0.3/pls_linux_amd64
+wget -O /usr/bin/pls https://github.com/lululombard/pls/releases/download/1.0.4/pls_linux_amd64
 
 chmod +x /usr/bin/pls
 

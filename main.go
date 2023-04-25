@@ -9,7 +9,7 @@ import (
 
 func main() {
 	if os.Getenv("DUMP_VERSION_AND_EXIT") == "1" {
-		fmt.Println("1.0.3")
+		fmt.Println("1.0.4")
 		os.Exit(0)
 	}
 
